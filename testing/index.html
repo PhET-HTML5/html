@@ -19,7 +19,7 @@
 			background-color: white;
 		}
 	</style>
-	<script src="awayfl/loader.js"></script>
+	<script src="html/testing/awayfl/loader.js"></script>
 </head>
 
 <body>
@@ -27,19 +27,19 @@
 		const urlParams = new URLSearchParams(window.location.search);
 		var swfName = urlParams.get('swf');
 		if (!swfName) {
-			swfName = 'buoyuancy.swf';
+			swfName = 'html/testing/buoyuancy.swf';
 		}
 		const config = {
 			width: 550,
 			height: 400,
-			splash: 'awayfl/todo.jpg',
+			splash: 'html/testing/awayfl/todo.jpg',
 			progress: { // optional
-				back: 'cover url(awayfl/progressBg.jpg)',
-				line: 'awayfl/progressLine.jpg', // or image, it will passed to progressLine background,
+				back: 'cover url(html/testing/awayfl/progressBg.jpg)',
+				line: 'html/testingawayfl/progressLine.jpg', // or image, it will passed to progressLine background,
 				rect: [0, 0.9, 1, 0.1] // x, y, width, height of preogress line relative contianer 
 			},
-			baseUrl: 'awayfl',
-			runtime: ['awayfl/runtime.js'],
+			baseUrl: 'html/testing/awayfl',
+			runtime: ['html/testing/awayfl/runtime.js'],
 			binary: [{
 				path: swfName,
 				resourceType: 'GAME',
